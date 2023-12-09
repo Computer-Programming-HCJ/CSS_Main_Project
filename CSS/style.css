@@ -1,0 +1,539 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.nav {
+  width: 1500px;
+  margin: auto;
+}
+
+header .logo {
+  display: flex;
+  text-align: left;
+}
+
+header .logo img {
+  width: 9vw;
+  height: auto;
+  margin-left: 10px;
+}
+
+.main-header {
+  height: 100vh;
+  position: relative;
+  background-image: url(../image/watch_background.png);
+  background-size: cover;
+  background-position: center center;
+}
+
+.menu {
+  float: right;
+  margin-top: 30px;
+  margin-right: 30px;
+  list-style: none;
+}
+
+.menu li {
+  display: inline-block;
+}
+
+.menu li a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  padding: 5px 20px;
+}
+
+.menu li a:hover {
+  background: #fff;
+  color: #333;
+}
+
+.logo {
+  float: left;
+}
+
+.logo img {
+  padding: 15px 0;
+  width: 1%;
+}
+
+.main-text {
+  position: absolute;
+  width: 600px;
+  height: 400px;
+  margin: 20% 30%;
+  text-align: center;
+}
+
+.main-text h1 {
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 55px;
+}
+
+.main-text p {
+  line-height: 1.5;
+  color: #ddd;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 17px;
+}
+
+.main-text h1 span {
+  color: rgb(255, 255, 255);
+  font-size: smaller;
+  letter-spacing: 2px;
+}
+
+.heading {
+  color: #214dcb;
+}
+
+.main-text a {
+  border: 1px solid #fff;
+  padding: 10px 25px;
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.main-text a:hover {
+  background: #fff;
+  color: #333;
+}
+
+/* global navigation-bar*/
+
+.global-header {
+  padding: 14px;
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+}
+
+.head {
+  overflow: hidden;
+  padding: 20px 10px;
+  background: linear-gradient(to right, rgb(102, 105, 106), #000000);
+}
+
+.head a {
+  float: left;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 12px;
+  line-height: 25px;
+}
+
+.head a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.head a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.about-image img {
+  transition: 1s ease;
+}
+
+.about-image img:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+  transition: 1s ease;
+}
+
+.header-right-side {
+  float: right;
+}
+
+@media screen and (max-width: 500px) {
+  .global-header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  .header-right-side {
+    float: none;
+  }
+}
+
+section {
+
+  padding: 20px;
+}
+
+.about {
+  display: flex;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 30px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+
+  header,
+  nav,
+  section,
+  footer {
+    padding: 10px;
+  }
+}
+
+/* Make webpages more responsive */
+
+@media (max-width:600px) {
+  .main-header {
+    width: 100%;
+  }
+
+  .logo {
+    float: none;
+    width: 50%;
+    text-align: center;
+    margin: auto;
+  }
+
+  .menu {
+    float: none;
+    margin-top: 0;
+  }
+
+  .menu li a {
+    padding: 5px;
+    font-size: 11px;
+  }
+
+  .menu {
+    text-align: center;
+  }
+
+  .main-text {
+    width: 100%;
+    height: auto;
+    margin: 15% 0;
+  }
+
+  .main-text h1 {
+    font-size: 30px;
+  }
+}
+
+/* products on home page*/
+
+.products-section {
+  text-align: center;
+  margin: 50px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.type {
+  display: inline-block;
+  margin: 50px;
+}
+
+.type img {
+  width: 200px;
+  height: 20vw;
+}
+
+.type p {
+  font-weight: bolder;
+  font-size: 1rem;
+  color: #000000;
+}
+
+.products-section>h2 {
+  color: #363434;
+  margin-top: 10px;
+  font-size: 3rem;
+}
+
+.type img:hover {
+  width: 250px;
+  height: 30vh;
+  transition: 0.5s;
+}
+
+
+/* Info content*/
+
+.info-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.left, .right {
+  background-color: #f8f8f8;
+  padding: 20px;
+  width: 45%;
+  text-align: center;
+  line-height: 2em;
+  letter-spacing: 1px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.left > p, .right > p{
+  font-size: 30px;
+  line-height: 1.5em;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+h3 {
+  margin-top: 0;
+}
+
+button {
+  background-color: #007aff;
+  color: white;
+  margin-top: 20px;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0057b8;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+
+
+/* About US */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.about-us {
+  height: 100vh;
+  width: 100%;
+  padding: 90px 0;
+}
+
+.pic {
+  height: auto;
+  width: 262px;
+}
+
+.about {
+  width: 1130px;
+  max-width: 85%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.text {
+  width: 540px;
+}
+
+.text h3 {
+  font-size: 70px;
+  font-weight: 600;
+  margin-bottom: 10px;
+
+}
+
+.text h5 {
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+span {
+  color: #4070f4;
+}
+
+.text p {
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 1px;
+}
+
+.data {
+  margin-top: 30px;
+}
+
+
+.hire {
+  font-size: 18px;
+  background: #4070f4;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  padding: 8px 25px;
+  border-radius: 6px;
+  transition: 0.5s;
+}
+
+.hire:hover {
+  background: #000;
+  border: 1px solid #4070f4;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+
+/* Product Page */
+
+
+.container-1 {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px;
+  justify-content: space-evenly;
+  background: linear-gradient(to right, #070807, #8e8f90);
+}
+
+.product-webpage {
+  width: calc(32% - 10px);
+  box-sizing: border-box;
+  padding: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: white;
+  border-color: black;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  filter: grayscale(100%);
+  font-family: 'Foldit', sans-serif;
+}
+
+.product-webpage img {
+  width: 100%;
+  max-width: 240px;
+  height: auto;
+  transition: filter 0.3s ease-in-out;
+}
+
+/* Hover effects */
+.product-webpage:hover {
+  transform: scale(1.05);
+  filter: grayscale(0%);
+}
+
+/* buy button */
+.buy {
+  background-color: #000000;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  margin-top: auto;
+}
+
+.product-images {
+  width: 300px;
+  height: 400px;
+}
+
+.product-webpage {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.product-webpage h2 {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.product-webpage p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.buy {
+  padding: 8px 15px;
+  font-size: 16px;
+}
+
+
+/* Contact */
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.contact-box{
+  background: linear-gradient(to right, #070807, #8e8f90);
+  color:white;
+}
+
+.contact-container {
+  max-width: 960px;
+  margin: 0 auto;
+  height:80vh;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"], input[type="email"], select, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.733);
+  font-size: 16px;
+}

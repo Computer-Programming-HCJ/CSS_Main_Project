@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+
+<body>
+    <!-- Navigation-bar -->
+    <header class="global-header">
+        <div class="head">
+            <a href="index.html" class="logo">🍎WATCH</a>
+            <div class="header-right-side">
+                <a href="index.html">Home</a>
+                <a href="about-us.html">About</a>
+                <a href="product.html">Product</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- All the contact information through which user can contact to the company-->
+    <section class="contact-box">
+        <div class="contact-container">
+            <h1>Contact Us</h1>
+            <form action="#">
+                <label for="first_name">First Name *</label>
+                <input type="text" id="first_name" name="first_name" required>
+
+                <label for="last_name">Last Name *</label>
+                <input type="text" id="last_name" name="last_name" required>
+
+                <label for="Email">Email *</label>
+                <input type="email" id="company_email" name="email" required>
+
+
+                <label for="what_to_discuss">What would you like to discuss? *</label>
+                <select id="what_to_discuss" name="what_to_discuss" required>
+                    <option value="">--Select--</option>
+                    <option value="Explore our plans">Explore our plans</option>
+                    <option value="Ask about features">Ask about latest watch features</option>
+                    <option value="Discuss pricing">Discuss pricing</option>
+                    <option value="Try new watch">Try New Watch</option>
+                    <option value="Request a demo">Request a demo</option>
+                </select>
+
+                <label for="company_headquarters">Company Headquarters *</label>
+                <select id="company_headquarters" name="company_headquarters" required>
+                    <option value="">--Select--</option>
+                    <option value="Canada">Canada</option>
+                    <option value="North America">North America</option>
+                    <option value="Europe">Europe</option>
+                    <option value="Asia">Asia</option>
+                    <option value="Australia">Australia</option>
+                </select>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>
